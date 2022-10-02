@@ -5,8 +5,8 @@ package shapes;
  */
 class Rectangle implements Shape {
 
-    private int sideA;
-    private int sideB;
+    private final int sideA;
+    private final int sideB;
 
     Rectangle(int sideA, int sideB) {
         this.sideA = sideA;

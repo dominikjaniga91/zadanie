@@ -5,7 +5,7 @@ package shapes;
  */
 class Circle implements Shape {
 
-    private int radius;
+    private final int radius;
 
     Circle(int radius) {
         this.radius = radius;

@@ -5,7 +5,7 @@ package shapes;
  */
 class Square implements Shape {
 
-    private int side;
+    private final int side;
 
     Square(int side) {
         this.side = side;
