@@ -6,9 +6,16 @@ package shapes;
 class Square implements Shape {
 
     private final int side;
+    private final String name;
 
-    Square(int side) {
+    Square(String name, int side) {
+        this.name = name;
         this.side = side;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     @Override

@@ -5,6 +5,7 @@ package shapes;
  */
 interface Shape {
 
+    String getName();
     double computeArea();
 
     double computeCircuit();

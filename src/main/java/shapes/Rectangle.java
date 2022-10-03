@@ -5,12 +5,19 @@ package shapes;
  */
 class Rectangle implements Shape {
 
+    private final String name;
     private final int sideA;
     private final int sideB;
 
-    Rectangle(int sideA, int sideB) {
+    Rectangle(String name, int sideA, int sideB) {
+        this.name = name;
         this.sideA = sideA;
         this.sideB = sideB;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     @Override

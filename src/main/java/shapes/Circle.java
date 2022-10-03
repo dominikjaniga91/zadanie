@@ -5,10 +5,17 @@ package shapes;
  */
 class Circle implements Shape {
 
+    private final String name;
     private final int radius;
 
-    Circle(int radius) {
+    Circle(String name, int radius) {
+        this.name = name;
         this.radius = radius;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     @Override

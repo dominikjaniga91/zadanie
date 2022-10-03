@@ -10,9 +10,9 @@ import java.util.List;
  */
 enum ShapeFactory {
 
-    KWADRAT(sides -> new Square(sides[0])),
-    KOLO(sides -> new Circle(sides[0])),
-    PROSTOKAT(sides -> new Rectangle(sides[0], sides[1]));
+    KWADRAT(sides -> new Square("KWADRAT", sides[0])),
+    KOLO(sides -> new Circle("KOLO", sides[0])),
+    PROSTOKAT(sides -> new Rectangle("PROSTOKAT", sides[0], sides[1]));
 
     private final ShapeCreator<Integer, Shape> function;
 
